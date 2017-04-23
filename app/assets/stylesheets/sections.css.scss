@@ -1,0 +1,10 @@
+.intro-title {
+  @media (min-width: $screen-sm-min) {
+    margin: 20px 0;
+  }
+  .icon-mrsongbird {
+    display: inline-block;
+    font-size: 200px;
+    height: 220px;
+  }
+}

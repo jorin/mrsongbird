@@ -1,10 +1,22 @@
-.intro-title {
-  @media (min-width: $screen-sm-min) {
-    margin: 20px 0;
+.cap-container {
+  background: $white;
+  text-align: center;
+  @media(min-width: $screen-sm-min) {
+    background: none;
+    height: 100px;
+    overflow: hidden;
+    .cap {
+      color: $white;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 1000px;
+      &.top-cap { background: $blue; }
+    }
   }
   .icon-mrsongbird {
     display: inline-block;
-    font-size: 200px;
-    height: 220px;
+    font-size: 100px;
+    height: 110px;
   }
 }

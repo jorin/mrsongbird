@@ -1,21 +1,18 @@
 .container
+  = render partial: 'partials/caps/top_cap'
   .row
     .col-xs-12
-      .text-center.intro-title
-        span.icon-mrsongbird
-        h1 Mr. Songbird
-      .row
-        .col-xs-12
-          h2 Subscribe to the email list:
-          form action='https://tinyletter.com/jorin' method='post' target='popupwindow' onsubmit="window.open('https://tinyletter.com/jorin', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-            .row
-              .col-sm-8
-                input type='text' class='form-control' name='email' id='tlemail' placeholder='Enter your email address'
-                input type='hidden' value='1' name='embed'
-              .col-sm-4
-                input.btn.btn-primary.btn-block type='submit' value='Subscribe'
-                p.small
-                  a href='https://tinyletter.com' target='_blank' powered by TinyLetter
-            p
-              ' And check out the archive at
-              a href='https://tinyletter.com/jorin' tinyletter.com/jorin
+      h1 Mr. Songbird
+      h2 Subscribe to the email list:
+      form action='https://tinyletter.com/jorin' method='post' target='popupwindow' onsubmit="window.open('https://tinyletter.com/jorin', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+        .row
+          .col-sm-8
+            input type='text' class='form-control' name='email' id='tlemail' placeholder='Enter your email address'
+            input type='hidden' value='1' name='embed'
+          .col-sm-4
+            input.btn.btn-primary.btn-block type='submit' value='Subscribe'
+            p.small
+              a href='https://tinyletter.com' target='_blank' powered by TinyLetter
+        p
+          ' And check out the archive at
+          a href='https://tinyletter.com/jorin' tinyletter.com/jorin

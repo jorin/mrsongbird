@@ -1,8 +1,8 @@
+= render partial: 'partials/caps/top_cap'
 .container
-  = render partial: 'partials/caps/top_cap'
   .row
     .col-xs-12
-      h1 Mr. Songbird
+      h1.text-center Mr. Songbird
       h2 Subscribe to the email list:
       form action='https://tinyletter.com/jorin' method='post' target='popupwindow' onsubmit="window.open('https://tinyletter.com/jorin', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
         .row
@@ -16,3 +16,4 @@
         p
           ' And check out the archive at
           a href='https://tinyletter.com/jorin' tinyletter.com/jorin
+= render partial: 'partials/caps/btm_cap'

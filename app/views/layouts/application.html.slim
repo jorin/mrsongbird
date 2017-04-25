@@ -14,6 +14,16 @@ html lang="en"
 
 
   body
-    = yield
+    .cap-container
+      .cap.top-cap
+        - if content_for? :top_cap
+          = yield :top_cap
+        - else
+          .icon-mrsongbird
+    .container
+      = yield
+    .cap-container
+      .cap.btm-cap
+        = yield :btm_cap
 
     = javascript_include_tag 'application'
